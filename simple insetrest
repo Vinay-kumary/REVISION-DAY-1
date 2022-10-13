@@ -1,0 +1,28 @@
+// C++ Program to Calculate Simple Interest Using Function
+#include <iostream>
+using namespace std;
+// Declaring the function
+float simpleInterest(float, float, float);
+int main(){
+    float p, r, t, SI;
+    
+    // Taking input
+    cout << "Enter the principal amount: ";
+    cin >> p;
+    cout << "Enter the rate of interest: ";
+    cin >> r;
+    cout << "Enter the time period: ";
+    cin >> t;
+    
+    // Calling out function
+    SI = simpleInterest(p, r, t);
+    
+    // Display result
+    cout << "Simple interest is:" << SI << endl;
+    
+    return 0;
+}
+// Defining the function
+float simpleInterest(float a, float b, float c){
+    return (a * b * c) / 100;
+}
