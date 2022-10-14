@@ -1,0 +1,32 @@
+/* Print address of Variable Using Pointer in C++
+
+Pointer is the variable that holds the address of another variable. */
+
+/* Print Pointer Address C++ Program,C++ Pointer Examples */address of the variable.c
+
+// Header Files
+#include <iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main() {
+
+   // Declare Variables
+   int a;
+   int *pt;
+
+   cout << "C++ Pointer Example Program : Print Pointer Address\n";
+   a = 88;
+   pt = &a;
+
+   cout << "\n[a  ]:Value of A = " << a;
+   cout << "\n[*pt]:Value of A = " << *pt;
+   cout << "\n[&a ]:Address of A = " << &a;
+   cout << "\n[pt ]:Address of A = " << pt;
+   cout << "\n[&pt]:Address of pt = " << &pt;
+   cout << "\n[pt ]:Value of pt = " << pt;
+
+   getch();
+   return 0;
+}
